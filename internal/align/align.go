@@ -161,7 +161,7 @@ func tracebackLinear(dp [][]cell, i, j int, a, b string) Result {
 	n := len(ra)
 	var identity float64
 	if n > 0 {
-		identity = float64(same) / float64(n)
+		identity = float64(same) / float64(n) * 100
 	}
 	return Result{
 		Score:      dp[startI][startJ].score,
